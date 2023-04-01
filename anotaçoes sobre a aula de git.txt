@@ -1,0 +1,13 @@
+git init: para inicializar um repositorio
+
+git config: para configurar user.name e user.email
+
+git status: para ver o status do versionamento
+
+git add: para passar os arquivos para stage
+
+git commit: para commitar os arquivor
+
+git push: para empurrar para o github
+
+git pull: para puxar os arquivos e revisar antes de dar um novo push
