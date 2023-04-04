@@ -5,12 +5,14 @@ function convertPokemonDetailsToPokemonModel(pokemonDetails) {
     pokemon1.name = pokemonDetails.name
     pokemon1.number = pokemonDetails.id
     pokemon1.photo = pokemonDetails.sprites.other.dream_world.front_default
-
+    const abilities = pokemonDetails.abilities.map((abilitySlots) => abilitySlots.ability.name)
+    const [ability] = abilities
+    pokemon1.abilities = abilities
+    pokemon1.ability = ability
     const types = pokemonDetails.types.map((typeSlots) => typeSlots.type.name)
     const [type] = types
     pokemon1.types = types
     pokemon1.type = type
-
     return pokemon1
 }
 

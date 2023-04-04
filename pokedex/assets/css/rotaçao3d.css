@@ -1,0 +1,77 @@
+.listpkm {
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  @media screen and (min-width: 380px) {
+    .listpkm {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .listpkm {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .listpkm {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+  
+  .card {
+    position: relative;
+    border-radius: 1rem;
+    width: 95%;
+    height: 10rem;
+    margin: .5rem;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+  }
+  
+  .card .face {
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+  
+  .card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+  }
+  
+  .card .back {
+    transform: perspective(600px) rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+  }
+  
+  .card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+  }
+  

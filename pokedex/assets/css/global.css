@@ -1,26 +1,21 @@
 * {
-    font-family: 'roboto', sans-serif;
-    box-sizing: border-box;
-}
-
-.content {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem;
-
-}
-
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
-    }
-}
-
-.content h1 {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-transform: capitalize;
+    font-family: sans-serif;
+    color: white;
+}
+
+body {
+    
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+h1{
+    margin: 10px;
+    color: black;
+    text-align: center;
 }
 
